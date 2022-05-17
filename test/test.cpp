@@ -411,6 +411,56 @@ void print() {
 }
 #pragma endregion
 
+//输入一个素数，它可以被多少个9连成的数整除
+void sushu9() {
+	long int x, y = 9, count = 1;
+	printf("请输入一个素数：");
+	scanf("%d", &x);
+	while (y % x != 0)
+	{
+		y = y * 10 + 9;
+		count++;
+	}
+	printf("素数%d能整除%d个9组成的数%ld", x, count, y);
+}
+
+//计算sum = 1 - 1 / 3 + 1 / 5 - 1 / 7 + … + 1 / 19
+void getsum() {
+	float sum = 1, i = 1;
+	while ((i * 2 + 1) <= 19)
+	{
+		sum -= 1 / (i * 2 + 1);
+		std::cout << 1 << "\\" << (i * 2 + 1) << "\n";
+		i++;
+	}
+}
+
+//编写程序:输入一行字符，分别统计出其中英文字母、空格、数字和其它字符的个数。
+void searchstr() {
+	char ss[30];
+	printf("请输入一行字符：\n");
+	gets_s(ss);
+	int zmnum = 0, sunum = 0, knum = 0, othernum = 0, i = 0;
+	while (ss[i] != '\0')
+	{
+		if (isalnum(ss[i]))
+		{
+			sunum++;
+		}
+		if (isalpha(ss[i]))
+		{
+			zmnum++;
+		}
+		if (isspace(ss[i]))
+		{
+			knum++;
+		}
+		i++;
+	}
+	int len = strlen(ss);
+	sunum -= zmnum;
+	othernum = len - (zmnum + sunum + knum);
+}
 
 int main()
 {
@@ -435,25 +485,18 @@ int main()
 	zbsearch();
 	xunzandian();
 	xunbcfstr();
+	sushu9();
+	getsum();
+	searchstr();
 	*/
 
 	//int n = 15;//链表长度
 	//list_node* list = creatlist(n);
 
-	input();
+	/*input();
 	max();
-	print();
+	print();*/
 
-	void funs(int* a, int* b);
+}
 
-	int x = 3, y = 5, * p = &x, * q = &y;
-	funs(p, q);
-	printf("%d, %d，", *p, *q);
-	funs(&x, &y);
-	printf("%d, %d\n", *p, *q);
-}
-void funs(int* a, int* b)
-{
-	int *c;
-	c = a; a = b; b = c;//aaaad ac(a)dad(c) ab(c)a(c)d(b)a(b) d(b)a(d)cbc
-}
+
