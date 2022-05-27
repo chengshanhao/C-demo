@@ -77,6 +77,7 @@ union Data {
 	int g;
 	double f;
 	Data* ne;
+	listnode ll;
 };
 
 struct HeroInfo {
@@ -98,10 +99,25 @@ void EquipmentInfo();
 void ShowHeroList();
 void ShowEquipList();
 void ShowCurrentHero(int index);
+
+//位域
+struct us {
+	unsigned int in : 3;
+}u;
+
 int main() {
 	//union Data* da;//需要赋予初始内存
 	//da = (Data*)calloc(10, sizeof(Data));
 	//da->g = 1;
+
+	//全局变量extern,对程序内所有文件可见
+	extern int f100;
+	//局部变量的默认存储类auto
+	auto f111 = "huangpengkai";
+	//全局变量的默认存储类auto，变量在程序生命周期内可见
+	static int f222;
+	//寄存器变量，不在内存中使用
+	register char f333[] = "asdasd";
 
 	/*FILE* fp;
 	fopen_s(&fp, "C:\\Users\\Administrator\\Desktop\\test.txt", "r");
@@ -124,8 +140,11 @@ int main() {
 	//puts(buff);
 	//fclose(fp);
 
+	////位域
+	//u.in = 8;
+	//printf("%d",u.in);
 
-	InitialInfo();
+	/*InitialInfo();
 	EquipmentInfo();
 	bool re = false;
 	bool re2 = false;
@@ -162,7 +181,7 @@ int main() {
 					printf("\n\n");
 					ShowEquipList();
 					printf("请重新输入编号为你的英雄选择装备：");
-					re = false;
+					re2 = false;
 				}
 			} while (!re2);
 		}
@@ -174,9 +193,9 @@ int main() {
 			printf("请重新输入编号选择你的专属英雄：");
 			re = false;
 		}
-	} while (!re);
-}
+	} while (!re);*/
 
+}
 //英雄信息
 void InitialInfo() {
 	strcpy(heros[0].heroname, "雅典拉拉");
@@ -274,3 +293,4 @@ void ShowCurrentHero(int index) {
 	printf("力量：%.1f\n", heros[index].attackvalue);
 	printf("拥有的金币：%d\n", heros[index].money);
 }
+

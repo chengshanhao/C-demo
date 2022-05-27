@@ -474,13 +474,13 @@ int main()
 
 	int g = 97;
 	g = pow(16, 0.25);//开放
-
+yhsj();
 	/*zhihuan();
 	days();
 	fun(10);
 	chinesechange();
 	lingxing();
-	yhsj();
+	
 	mfzeng();
 	zbsearch();
 	xunzandian();
@@ -496,7 +496,6 @@ int main()
 	/*input();
 	max();
 	print();*/
-
 }
 
 
