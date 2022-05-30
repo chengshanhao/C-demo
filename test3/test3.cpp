@@ -123,7 +123,7 @@ int fu(int n) {
 
 int main()
 {
-	fu(5);
+	int gp = fu(5);
 	////当前根目录
 	//char ss[100];
 	//std::cout << _getcwd(ss, 100);
