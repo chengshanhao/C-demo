@@ -43,6 +43,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test2", "test2\test2.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test3", "test3\test3.vcxproj", "{2D38A22F-0991-4B95-B994-9150846C7504}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "笔记", "笔记", "{5E57553B-1FD7-4F1F-B2E7-63968F43DD95}"
+	ProjectSection(SolutionItems) = preProject
+		G:\工作\专升本计划\C语言学习\c语言笔记本.txt = G:\工作\专升本计划\C语言学习\c语言笔记本.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
