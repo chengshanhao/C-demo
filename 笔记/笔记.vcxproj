@@ -142,7 +142,7 @@
     <ClCompile Include="笔记.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="G:\工作\专升本计划\C语言学习\c语言笔记本.txt" />
+    <Text Include="C语言笔记本.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
