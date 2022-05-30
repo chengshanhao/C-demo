@@ -43,10 +43,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test2", "test2\test2.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test3", "test3\test3.vcxproj", "{2D38A22F-0991-4B95-B994-9150846C7504}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "笔记", "笔记", "{5E57553B-1FD7-4F1F-B2E7-63968F43DD95}"
-	ProjectSection(SolutionItems) = preProject
-		G:\工作\专升本计划\C语言学习\c语言笔记本.txt = G:\工作\专升本计划\C语言学习\c语言笔记本.txt
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "笔记", "笔记\笔记.vcxproj", "{6D6AF35A-94E7-4C81-AE08-06C2D7012AE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -258,6 +255,16 @@ Global
 		{2D38A22F-0991-4B95-B994-9150846C7504}.Release|x64.Build.0 = Release|x64
 		{2D38A22F-0991-4B95-B994-9150846C7504}.Release|x86.ActiveCfg = Release|Win32
 		{2D38A22F-0991-4B95-B994-9150846C7504}.Release|x86.Build.0 = Release|Win32
+		{6D6AF35A-94E7-4C81-AE08-06C2D7012AE1}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6D6AF35A-94E7-4C81-AE08-06C2D7012AE1}.Debug|x64.ActiveCfg = Debug|x64
+		{6D6AF35A-94E7-4C81-AE08-06C2D7012AE1}.Debug|x64.Build.0 = Debug|x64
+		{6D6AF35A-94E7-4C81-AE08-06C2D7012AE1}.Debug|x86.ActiveCfg = Debug|Win32
+		{6D6AF35A-94E7-4C81-AE08-06C2D7012AE1}.Debug|x86.Build.0 = Debug|Win32
+		{6D6AF35A-94E7-4C81-AE08-06C2D7012AE1}.Release|Any CPU.ActiveCfg = Release|Win32
+		{6D6AF35A-94E7-4C81-AE08-06C2D7012AE1}.Release|x64.ActiveCfg = Release|x64
+		{6D6AF35A-94E7-4C81-AE08-06C2D7012AE1}.Release|x64.Build.0 = Release|x64
+		{6D6AF35A-94E7-4C81-AE08-06C2D7012AE1}.Release|x86.ActiveCfg = Release|Win32
+		{6D6AF35A-94E7-4C81-AE08-06C2D7012AE1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
