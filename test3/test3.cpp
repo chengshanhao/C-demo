@@ -107,23 +107,26 @@ void printlist(listnode* node) {
 		printf("%2d", p->data);
 		p = p->next;
 	}
-	printf("%2d", p->data);
+	printf("%2d\n", p->data);
 }
 
-int fu(int n) {
-	if (n <= 1)
-	{
-		return 1;
-	}
-	else
-	{
-		return fu(n - 1) + fu(n - 2);
-	}
-}
+union fg {
+	double f;
+	float fr[2];
+};
 
+struct stru
+{
+	fg g;
+	static int p[3];
+};
 int main()
 {
-	int gp = fu(5);
+	stru pl;
+	int yu = sizeof(pl);
+
+	int a = 10, b = 9;
+	printf("%d,%d,%d,%d\n", a += 5, a--, --b, b++);//右结合性
 	////当前根目录
 	//char ss[100];
 	//std::cout << _getcwd(ss, 100);
@@ -159,15 +162,69 @@ int main()
 	//}
 	//printf("The max is:%d\nThe min is:%d\n", max, min);
 
-	sum(5, 'a', 'b', 'c', 'd', 'f');
-	printf("%d\n", printf("%d\n", printf("%d\n", 125)));
+	////可变参数
+	//sum(5, 'a', 'b', 'c', 'd', 'f');
 
 	/*xiangjia();
 	ifgrade();*/
 
-	listnode* node;
+	/*listnode* node;
 	node = reseverlist(addnode(intialnode()));
-	printlist(node);
+	printlist(node);*/
+
+	//char lk[5] = "abc";
+	//char* kk;
+	//kk = (char*)malloc(sizeof(char));
+	//strcpy(kk, "abcdef");//赋值
+	//int y = strcmp(kk, "abcdef");//比对 相等为0 大于1 小于-1
+	//char* l = strcat(lk, kk + 1);//追加
+	//strupr(kk);//字符串大写
+	//printf("%s\n", lk);
+
+
+	for (int i = 2; i <= 1000; i++)
+	{
+		int re = 1;
+		int num = i;
+		while (num)
+		{
+			for (int j = 1; j <= 500; j++)
+			{
+				if (num % j == 0 && num != j && j != 1 || num == 1)
+				{
+					re = 0;
+					break;
+				}
+			}
+			if (!re)
+			{
+				break;
+			}
+			num /= 10;
+		}
+		if (re)
+		{
+			printf("%d\n", i);
+			//2020
+			//dbc(a)bc ddcba cdbca dabaa d(b)a(d)abc -3
+			//baccd bdb(a)ba acbdb(c) ac(d)bdc  -6
+			//8 years old injury many stores $15 and $100 shoulder bacbb -1 -4 4486
+
+			//cbca(b)a bcddb(c) babaa caa(d)dc b(d)cd(b)a(b)d -6
+			//cd(a)dcc abbcd ab(a)ad(a)a(b) add(c)a(b)d bbccb -6
+		}
+
+		
+	}
+	int js(int x);
+	int a1 = 6, a2 = 2;
+	int y = js(a1) / js(a2);
+}
+
+int js(int x) {
+	int y;
+	y = x++ * x++;
+	return y;
 }
 
 
