@@ -182,6 +182,12 @@ int main()
 	//printf("%s\n", lk);
 
 
+	////二维数组的地址移动运算
+	//int sd[2][2] = { 1,2,3,4 };
+	//int *rt = (int *)(&sd+1);
+	//int *rt2 = (int*)(&sd-1);
+	//int rt3 = *(rt2+4);
+
 	for (int i = 2; i <= 1000; i++)
 	{
 		int re = 1;
