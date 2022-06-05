@@ -125,8 +125,10 @@ int main()
 	stru pl;
 	int yu = sizeof(pl);
 
+	//右结合性
 	int a = 10, b = 9;
-	printf("%d,%d,%d,%d\n", a += 5, a--, --b, b++);//右结合性
+	printf("%d,%d,%d,%d\n", a += 5, a--, --b, b++);
+
 	////当前根目录
 	//char ss[100];
 	//std::cout << _getcwd(ss, 100);
@@ -136,7 +138,7 @@ int main()
 	// 十一（84）
 	//b(a)cd(c)bc(d) bac(d)da(d) aa(d)aab d(b)c(d)d(c)d(c)a -10
 	//m (x%3==0&&x%7==0) 1次 4(3)次 tolower()(strlwr()) 1 j>=1 if(bb[j]<n)(bb[j]=bb[j-1]) break sizeof(struct node) (宏)定义 m  1021103 -6
-
+	//m (x%3==0&&x%7==0) 1次 4(3)次 tolower()(strlwr()) 1 j>=1 if(bb[j]<n)(bb[j]=bb[j-1]) break sizeof(struct node) (宏)定义 m  1021103 -6
 
 	////指针指向二维数组，读取数据错误写法
 	//int w[2][3] = { 1,2,3,4,5,6 }, (*pw)[3] = w; pw = w;
@@ -220,7 +222,7 @@ int main()
 			//cd(a)dcc abbcd ab(a)ad(a)a(b) add(c)a(b)d bbccb -6
 		}
 
-		
+
 	}
 	int js(int x);
 	int a1 = 6, a2 = 2;
