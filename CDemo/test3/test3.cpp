@@ -53,6 +53,35 @@ void ifgrade() {
 	printf("成绩等级为：%c", level);
 }
 
+//1000以内的超级素数（将数从个位开始去除，剩余的数一直是素数），谨记1不是素数
+void supersushu() {
+	for (int i = 2; i <= 1000; i++)
+	{
+		int re = 1;
+		int num = i;
+		while (num)
+		{
+			for (int j = 1; j <= i / 2; j++)
+			{
+				if (num % j == 0 && num != j && j != 1 || num == 1)
+				{
+					re = 0;
+					break;
+				}
+			}
+			if (!re)
+			{
+				break;
+			}
+			num /= 10;
+		}
+		if (re)
+		{
+			printf("%d\n", i);
+		}
+	}
+}
+
 struct listnode {
 	int data;
 	struct listnode* next;
@@ -125,6 +154,10 @@ int main()
 	stru pl;
 	int yu = sizeof(pl);
 
+	int *r1 = NULL;
+	printf("%d",sizeof(r1));
+	printf("%d\n",sizeof(*r1));
+
 	//右结合性
 	int a = 10, b = 9;
 	printf("%d,%d,%d,%d\n", a += 5, a--, --b, b++);
@@ -190,40 +223,13 @@ int main()
 	//int *rt2 = (int*)(&sd-1);
 	//int rt3 = *(rt2+4);
 
-	for (int i = 2; i <= 1000; i++)
-	{
-		int re = 1;
-		int num = i;
-		while (num)
-		{
-			for (int j = 1; j <= 500; j++)
-			{
-				if (num % j == 0 && num != j && j != 1 || num == 1)
-				{
-					re = 0;
-					break;
-				}
-			}
-			if (!re)
-			{
-				break;
-			}
-			num /= 10;
-		}
-		if (re)
-		{
-			printf("%d\n", i);
-			//2020
-			//dbc(a)bc ddcba cdbca dabaa d(b)a(d)abc -3
-			//baccd bdb(a)ba acbdb(c) ac(d)bdc  -6
-			//8 years old injury many stores $15 and $100 shoulder bacbb -1 -4 4486
+	//2020
+	//dbc(a)bc ddcba cdbca dabaa d(b)a(d)abc -3
+	//baccd bdb(a)ba acbdb(c) ac(d)bdc  -6
+	//8 years old injury many stores $15 and $100 shoulder bacbb -1 -4 4486
+	//cbca(b)a bcddb(c) babaa caa(d)dc b(d)cd(b)a(b)d -6
+	//cd(a)dcc abbcd ab(a)ad(a)a(b) add(c)a(b)d bbccb -6
 
-			//cbca(b)a bcddb(c) babaa caa(d)dc b(d)cd(b)a(b)d -6
-			//cd(a)dcc abbcd ab(a)ad(a)a(b) add(c)a(b)d bbccb -6
-		}
-
-
-	}
 	int js(int x);
 	int a1 = 6, a2 = 2;
 	int y = js(a1) / js(a2);
