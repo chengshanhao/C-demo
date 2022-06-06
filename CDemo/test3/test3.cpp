@@ -154,13 +154,24 @@ int main()
 	stru pl;
 	int yu = sizeof(pl);
 
-	int *r1 = NULL;
-	printf("%d",sizeof(r1));
-	printf("%d\n",sizeof(*r1));
+	////实例，不同计算机位数下的指针字节数
+	////32位计算机下，指针字节数为4，64位下是8
+	//long long *r1 =&yu;
+	//printf("%d",sizeof(r1));//字节为8
+	//printf("%d\n",sizeof(*r1));//未指向指针的内存地址，字节数为其数据类型字节数
+
+	////（n+1）移动二维数组的首元素地址
+	//int n[4][2] = { 11,24,37,45,56,54,6 };
+	//int(*t)[2] = n;
+	//int f = *(n+1)[0];
 
 	//右结合性
-	int a = 10, b = 9;
-	printf("%d,%d,%d,%d\n", a += 5, a--, --b, b++);
+	/*int a = 10, b = 9;
+	printf("%d,%d,%d,%d\n", a += 5, a--, --b, b++);*/
+
+	char r[] = "Apple Ipad";
+
+	strcpy(r, strlwr(r));
 
 	////当前根目录
 	//char ss[100];
@@ -216,7 +227,6 @@ int main()
 	//strupr(kk);//字符串大写
 	//printf("%s\n", lk);
 
-
 	////二维数组的地址移动运算
 	//int sd[2][2] = { 1,2,3,4 };
 	//int *rt = (int *)(&sd+1);
@@ -229,6 +239,12 @@ int main()
 	//8 years old injury many stores $15 and $100 shoulder bacbb -1 -4 4486
 	//cbca(b)a bcddb(c) babaa caa(d)dc b(d)cd(b)a(b)d -6
 	//cd(a)dcc abbcd ab(a)ad(a)a(b) add(c)a(b)d bbccb -6
+
+	//Badca(b) ab(d)cda(c) (x>z&&y>z)||(x==z&&y==z)
+	//返回参数类型 函数名 函数体
+	//for while do-while if(a%s==0&&a%7==0){} 12 7
+	//11 13 3
+	//3 2 -1
 
 	int js(int x);
 	int a1 = 6, a2 = 2;
