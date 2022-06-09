@@ -228,7 +228,13 @@ long long *r1 =&yu;
 printf("%d",sizeof(r1));//字节为8
 printf("%d\n",sizeof(*r1));//未指向指针的内存地址，字节数为其数据类型字节数
 
-
+//形参指针的内存地址改变，并不影响实参
+void point(char* pr) {
+	pr += 3;
+}
+char br[4] = { 'a','b','C','d' }, * pr = br;
+point(pr);
+printf("%c\n", *pr);
 
 
 /******各计算及库函数等方法*****/

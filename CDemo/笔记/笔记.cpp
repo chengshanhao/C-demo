@@ -1,6 +1,6 @@
-﻿#include <iostream>
+﻿#include "stdio.h"
+#include "direct.h"
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+
 }

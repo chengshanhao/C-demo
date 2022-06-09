@@ -149,6 +149,7 @@ struct stru
 	fg g;
 	static int p[3];
 };
+void cs(int y) {};
 int main()
 {
 	stru pl;
@@ -170,7 +171,6 @@ int main()
 	printf("%d,%d,%d,%d\n", a += 5, a--, --b, b++);*/
 
 	char r[] = "Apple Ipad";
-
 	strcpy(r, strlwr(r));
 
 	////当前根目录
@@ -245,16 +245,45 @@ int main()
 	//for while do-while if(a%s==0&&a%7==0){} 12 7
 	//11 13 3
 	//3 2 -1
+	//dc(b)abc b(d)dcba cdbca dab(d)aa(c) c(b)dabc
 
-	int js(int x);
-	int a1 = 6, a2 = 2;
-	int y = js(a1) / js(a2);
-}
+	FILE* fp;
+	char t[12] = "";
+	//fp = fopen("E://1.txt", "w+");
+	//fputs("abcd", fp);
+	//fseek(fp, 3L, SEEK_CUR);//abcd efg
+	//fputs(t, fp);
+	//fclose(fp);
 
-int js(int x) {
-	int y;
-	y = x++ * x++;
-	return y;
+	/*fp=fopen("E://1.txt", "r");
+	fseek(fp, -2L, SEEK_END);
+	fgets(t,9,fp);
+	printf("%s\n",t);
+	fclose(fp);
+	system("pause");*/
+	/*void (*tr)() = supersushu;
+	tr();*/
+
+	//77
+	//daccb baddb abb(c)b(a)a bccdc b(d)caac -3
+	//dccc(b)a bcbad dcbac dd(a)a(b)d(c)c 64,500 2.6 million the United States global reliable energy
+	//a(c)bacc -10
+	//学生新闻报刊正在寻找一位编辑(记者)。申请人必须现在大学学习并且写新闻报道有至少一年的经验。成功通过的申请者将
+	//被要求去报道在这座城市和在各个地点（校园）发生的新闻.如果你感兴趣，请在6月（底）之前发送你的简历给学生新闻报刊办公室。
+	//想了解更多的信息，请访问我们的网站。-5
+	//-5
+
+	//cb(d)dcd b(d)dac(d)d bc(a)c(b)d(c)d(c) d(b)dbb(a)b dd(c)cba -10
+	//accac adbca bcaab bbabd
+	//spas here sweet shops garlic dishes opportunities
+	//acbaa
+
+	char tt = '012';
+	char** qq, * p, q;
+	q = 'a';
+	p = &q; qq = &p;
+
+
 }
 
 
