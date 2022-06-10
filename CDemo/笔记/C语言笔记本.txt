@@ -236,6 +236,11 @@ char br[4] = { 'a','b','C','d' }, * pr = br;
 point(pr);
 printf("%c\n", *pr);
 
+//printf输出时易错点
+//++tu，--tu以tu最后结果输出
+int tu=2;
+printf("%d%d%d%d", tu *= 2, ++tu, tu++,--tu);
+
 
 /******各计算及库函数等方法*****/
 /******各计算及库函数等方法*****/

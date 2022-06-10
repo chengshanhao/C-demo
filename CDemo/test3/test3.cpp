@@ -82,6 +82,29 @@ void supersushu() {
 	}
 }
 
+//选择排序法
+void selectorderby() {
+	int g[7] = { 2,5,6,7,3,4,10 };
+	int maxindex, i, j, temp;
+	for (i = 0; i < 6; i++)//只需进行7-1次
+	{
+		maxindex = i;
+		for (j = i + 1; j < 7; j++)
+		{
+			if (g[j] < g[maxindex])
+			{
+				maxindex = j;//获取最小数的索引
+			}
+		}
+		if (i != maxindex)
+		{
+			temp = g[i];
+			g[i] = g[maxindex];
+			g[maxindex] = temp;
+		}
+	}
+}
+
 struct listnode {
 	int data;
 	struct listnode* next;
@@ -274,16 +297,16 @@ int main()
 	//-5
 
 	//cb(d)dcd b(d)dac(d)d bc(a)c(b)d(c)d(c) d(b)dbb(a)b dd(c)cba -10
-	//accac adbca bcaab bbabd
-	//spas here sweet shops garlic dishes opportunities
+	//a(b)cc(d)ac adbca b(a)caab bbab(c)d -8
+	//spas here sweet shops garlic dishes opportunities -1
 	//acbaa
-
 	char tt = '012';
 	char** qq, * p, q;
 	q = 'a';
 	p = &q; qq = &p;
 
-
+	int tu = 2;
+	printf("%d%d%d%d", tu *= 2, ++tu, tu++,--tu);
 }
 
 
