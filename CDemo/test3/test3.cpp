@@ -173,7 +173,8 @@ struct stru
 	static int p[3];
 };
 void cs(int y) {};
-int main()
+
+int main(int argc, char* argv[])
 {
 	stru pl;
 	int yu = sizeof(pl);
@@ -306,7 +307,17 @@ int main()
 	p = &q; qq = &p;
 
 	int tu = 2;
-	printf("%d%d%d%d", tu *= 2, ++tu, tu++,--tu);
+	printf("%d%d%d%d", tu *= 2, ++tu, tu++, --tu);
+
+	//卷一：87
+	//dadcc dbaac(a)b ddcbc -2
+	//2.75（2.5） for do-while while *(p+6) 返回参数为int指针类型的名为f1自定义无参数函数 反回int类型函数的名为f2的指针 -4
+	//n!=0 i++ j++ break(scanf("%d",&n))-2
+	//i/10%10 pow(a,3)*pow(b,3)*pow(c,3)==i
+	//scanf("%d",(&)a[i]) i<=9 a[j]>a[i] a[i]=[j]; a[j]=t;-5
+	//***** 39 6 9 16
+	// 卷二
+	//cbcd(b)c cbaca cbbac bd(a)dbb -1
 }
 
 
